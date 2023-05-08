@@ -5,36 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Weather app</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="f">
-            <button><img src="images/search.png" alt=""></button>
+    <section class="top-banner">
+        <div class="container">
+          <h1 class="heading">Simple Weather App</h1>
+          <form>
+            <input type="text" placeholder="Search for a city" autofocus>
+            <button type="submit">SUBMIT</button>
+            <span class="msg"></span>
+          </form>
         </div>
+      </section>
+      <section class="ajax-section">
+        <div class="container">
+          <ul class="cities"></ul>
+        </div>
+      </section>
 
-        <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">New York</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="images/wind.png">
-                    <div>
-                        <p class="wind">15 km/h</p>
-                        <p>Wind Speed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <li class="city">
+        <h2 class="city-name" data-name="...">
+          <span>...</span>
+          <sup>...</sup>
+        </h2>
+        <span class="city-temp">...<sup>°C</sup></span>
+        <figure>
+          <img class="city-icon" src="..." alt="...">
+          <figcaption>...</figcaption>
+        </figure>
+      </li>
 </body>
 </html>
